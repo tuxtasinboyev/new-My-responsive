@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">TechService</div>
+    <nav class="nav" id="nav-menu">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">☰</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Professional IT Solutions</h1>
+      <p>We build scalable and secure digital systems.</p>
+    </div>
+    <img src="https://picsum.photos/400/400" alt="IT Image" />
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">Web Development</div>
+      <div class="card">App Development</div>
+      <div class="card">UI/UX Design</div>
+      <div class="card">DevOps</div>
+      <div class="card">SEO Optimization</div>
+      <div class="card">Cloud Solutions</div>
+    </div>
+  </section>
+
+  <section class="about">
+    <img src="https://picsum.photos/400/400" alt="About" />
+    <div>
+      <h2>Why Choose Us?</h2>
+      <p>We deliver high-quality services with full client satisfaction. Our team is skilled in the latest technologies
+        and trends.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your name" required />
+      <input type="email" placeholder="Your email" required />
+      <textarea placeholder="Your message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 TechService. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.getElementById("nav-menu");
+    hamburger.onclick = () => {
+      nav.classList.toggle("show");
+    };
+  </script>
+
+</body>
+
+</html>
